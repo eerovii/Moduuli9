@@ -4,18 +4,22 @@ class Auto:
         self.huippu = huippunopeudet
         self.nopeus = 0
         self.kuljettu = 0
+        #auto def
 
     def kiihdytä(self, muutos):
         self.nopeus += muutos
         if self.nopeus > self.huippu: self.nopeus = self.huippu
         if self.nopeus < 0: self.nopeus = 0
+        #kiihdytä def
 
     def kulje(self, aika):
         muutos = aika * self.nopeus
         self.kuljettu += muutos
+        #kulje def
 
     def __str__(self):
         return f'{self.rekkari} \n {self.huippu} \n {self.nopeus} \n {self.kuljettu}'
+        #string def
 
 auto = Auto('ABC-123', 60)
 auto.kuljettu = 2000
