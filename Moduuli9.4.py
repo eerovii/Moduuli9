@@ -2,9 +2,9 @@ from random import randint
 
 
 class Auto:
-    def __init__(self, rekisteri, huiput):
-        self.rekkari = rekisteri
-        self.huippu = huiput
+    def __init__(self, rekisteritunnus, huippunopeudet):
+        self.rekkari = rekisteritunnus
+        self.huippu = huippunopeudet
         self.nopeus = 0
         self.kuljettu = 0
 
